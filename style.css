@@ -1,0 +1,189 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue */
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+/* Header styles */
+.header {
+    background-color: #004b69; /* Teal color */
+    color: #fff;
+    text-align: center;
+    font-family: initial;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+    width: 80px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    size: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: #ffffff; 
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main-content blockquote {
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #005f5f;
+    margin-bottom: 15px;
+}
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(34, 0, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 40px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+/* Gallery Styles */
+.gallery {
+    background-color: #e1f7f3;
+    border-radius: 15px;
+    text-align: center;
+    order: inherit;
+}
+
+.gallery h2 {
+    font-size: 25px;
+    color: #005f5f;
+}
+
+.image-container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.image-container .image {
+    width: 210px;
+    height: 250px;
+    order: unset;
+    
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f5f;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 40px;
+}
